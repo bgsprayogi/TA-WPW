@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'portligas';
+    src: url(PortLligatSans-Regular.ttf);
+}
+
+.body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.login_page {
+    position: relative;
+    display: flex;
+}
+
+.box {
+    padding: 20px;
+    border: 1px solid black;
+    position: relative;
+    width: 675px;
+    height: 650px;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+}
+
+.anakbox {
+    background: linear-gradient(to right,#1176EE , #094488);
+    width: 715px;
+    position: relative;
+    margin-top: -20px;
+    border-radius: 20px;
+    margin-left: -20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);   
+    height: 150px;
+}
+
+p{
+    font-family: portligas;
+    margin-left: 200px;
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.email_box{
+    background: rgb(255, 253, 253);
+    width: 400px;
+    position: relative;
+    margin-top: -20px;
+    border-radius: 20px;
+    margin-left: 155px;
+    border-color: black;
+    height: 60px;
+    border: 1px solid black;
+}
+
+.password_box{
+    background: rgb(255, 253, 253);
+    width: 400px;
+    position: relative;
+    margin-top: -20px;
+    border-radius: 20px;
+    margin-left: 155px;
+    border: 1px solid black;
+    border-color: black;
+    height: 60px;
+}
+
+.signin_box{
+    background: red;
+    width: 430px;
+    position: absolute;
+    margin-top: 30px;
+    border-radius: 20px;
+    margin-left: 140px;
+    border-color: black;
+    height: 50px;
+}
+
+p1{
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 170px;
+    
+}
