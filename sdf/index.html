@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECHive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="//unpkg.com/alpinejs" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <!-- Navbar Start -->
+    <navbar class="bg-gradient-to-r from-blue-500 to-black flex justify-between items-center px-20 py-4">
+        <img src="/image/logo.png" alt="logo" class="w-40">
+        <div class="flex gap-10 text-white">
+            <a href="index.html">Home</a>
+            <a>Product</a>
+        </div>
+        <div class="flex flex-col items-center text-white">
+            <div class="flex gap-4 text-gray-200">
+                <a href="cart.html" class="hover:scale-105 duration-200"><i class="bi bi-bag-fill text-3xl"></i></a>
+                <i class="bi bi-person-circle text-3xl text-gray-200"></i>
+            </div>
+            <p>aldomarsendo@gmail.com</p>
+        </div>
+    </navbar>
+    <!-- Navbar End -->
+
+    <!-- Main Start -->
+    <nav class="flex justify-center gap-10 pt-5">
+        <p class="border border-1 border-black p-2">Keyboard</p>
+        <p class="border border-1 border-black p-2">Motherboard</p>
+        <p class="border border-1 border-black p-2">Monitor</p>
+        <p class="border border-1 border-black p-2">Mouse</p>
+        <p class="border border-1 border-black p-2">CPU</p>
+        <p class="border border-1 border-black p-2">RAM</p>
+    </nav>
+
+    <div class="flex justify-center py-10">
+
+        <div x-data="{ open: false, openToBuy: false }" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 lg:gap-20 pt-10">
+            <a @click="open = ! open" href="#" class="duration-200  relative">
+                <div class="border bg-white p-6 shadow-md rounded">
+                    <img src="/image/keyboard.png" class="w-52 h-52" alt="">
+                    <p class="text-lg text-center font-semibold my-3">Keyboard</p>
+                </div>
+            </a>
+            <div x-show="open" href="#" class="duration-200 absolute left-100 flex justify-center">
+                <div class="border bg-red-300 shadow-md rounded flex">
+                    <div class="bg-gray-300 p-6">
+                        <button @click="open = !open"><i class="bi bi-arrow-90deg-left bg-gray-100 p-1 rounded-md my-2"></i></button>
+                        <img src="/image/monitor.png" class="w-52 bg-white p-4 rounded-lg my-16" alt="">
+                    </div>
+                    <div class="bg-white flex flex-col justify-start items-start pl-5 pr-10 py-10">
+                        <div class="flex items-center gap-2">
+                            <p class="text-lg text-center font-semibold my-3">Monitor</p>
+                            <i class="bi bi-chat-dots text-xl"></i>
+                        </div>
+                        <p class="">Teachive_shop</p>
+                        <p class="text-md my-1 w-40 border p-2 rounded-lg">SUIRGE Monitor 32” Curved 300R 1080P HD No Border IPS Panel Gaming Monitor</p>
+                        <p class="text-md my-1 line-through">Rp 2.000.000</p>
+                        <p class="text-xl font-bold text-[#7B7D1E] my-1"> Rp 1.800.000</p>
+                        <div class="bg-black text-white text-lg font-semibold px-4 py-1 rounded-full text-center w-52">
+                            <button @click="openToBuy = !openToBuy">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div x-show="openToBuy" href="#" class="duration-200 flex justify-center absolute right-40">
+                <div class="border bg-red-300 shadow-md rounded flex">
+                    <div class="bg-gray-300 p-6">
+                        <button @click="openToBuy = !openToBuy"><i class="bi bi-arrow-90deg-left bg-gray-100 p-1 rounded-md my-2"></i></button>
+                        <img src="/image/monitor.png" class="w-52 bg-white p-4 rounded-lg my-16" alt="">
+                    </div>
+                    <div class="bg-white flex flex-col justify-start items-start pl-5 pr-10 py-10">
+                        <div class="flex items-center gap-2">
+                        </div>
+                        <p class="">Price</p>
+                        <div class="text-md my-1 w-40 border p-2 rounded-lg">
+                            <p class="text-md my-1 line-through">Rp 2.000.000</p>
+                            <p class="text-xl font-bold text-[#7B7D1E] my-1"> Rp 1.800.000</p>
+                        </div>
+                        <p class="text-sm">Stok 20</p>
+                        <div class="bg-black text-white text-lg font-semibold px-4 py-1 rounded-full text-center w-52 my-2">
+                            <button>Buy</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="duration-200">
+                <div class="border bg-white p-6 shadow-md rounded">
+                    <img src="/image/motherboard.png" class="w-52 h-52" alt="">
+                    <p class="text-lg text-center font-semibold my-3">Motherboard</p>
+                </div>
+            </a>
+
+            <a href="#" class="duration-200">
+                <div class="border bg-white p-6 shadow-md rounded">
+                    <img src="/image/monitor.png" class="w-52 h-52" alt="">
+                    <p class="text-lg text-center font-semibold my-3">Monitor</p>
+                </div>
+            </a>
+            <a href="#" class="duration-200">
+                <div class="border bg-white p-6 shadow-md rounded">
+                    <img src="/image/mouse.png" class="w-52 h-52" alt="">
+                    <p class="text-lg text-center font-semibold my-3">Mouse</p>
+                </div>
+            </a>
+            <a href="#" class="duration-200">
+                <div class="border bg-white p-6 shadow-md rounded">
+                    <img src="/image/cpu.png" class="w-52 h-52" alt="">
+                    <p class="text-lg text-center font-semibold my-3">CPU</p>
+                </div>
+            </a>
+            <a href="#" class="duration-200">
+                <div class="border bg-white p-6 shadow-md rounded">
+                    <img src="/image/ram.png" class="w-52 h-52" alt="">
+                    <p class="text-lg text-center font-semibold my-3">RAM</p>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Main End -->
+
+    <!-- Footer Start -->
+    <Footer class="bg-black px-20 py-4 text-white rounded-t-3xl">
+        <div class="my-5">
+            <img src="/image/logo new.png" alt="logo" class="w-40 bg-white rounded-full p-2">
+        </div>
+        <div class="flex gap-10 justify-center">
+            <div class="flex flex-col gap-10 justify-center text-white w-[40%]">
+                <p class="text-xl">we are Techive,The  always there for you</p>
+                <div class="flex gap-2 items-center">
+                    <i class="bi bi-geo-alt-fill text-4xl"></i>
+                    <p class="text-sm">Jl.keputih makam blok E,no 7,keputih,ke.Sukolilo,Surabaya,jawa Timur 60111</p>
+                </div>
+            </div>
+            <div class="flex flex-col  w-[20%]">
+                <p>Home</p>
+                <p>Product</p>
+                <p>Favorite</p>
+                <p>About</p>
+            </div>
+            <div class="w-[20%]">
+                <p>Community</p>
+                <p>News</p>
+                <p>Sales</p>
+                <p>API</p>
+            </div>
+            <div class="w-[20%]">
+                <p>Guides</p>
+                <p>Terms of use</p>
+                <p>Terms of sale</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="w-[40%]">
+                <div class="flex flex-col">
+                    <p class="text-2xl font-semibold">Connect with us</p>
+                    <div class="flex gap-5 text-3xl my-2">
+                        <i class="bi bi-instagram"></i>
+                        <i class="bi bi-linkedin"></i>
+                        <i class="bi bi-twitter"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </Footer>
+    <!-- Footer End -->
+
+</body>
+</html>

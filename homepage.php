@@ -19,8 +19,8 @@
           <img id="logo" src="logo new.png" alt="" />
         </li>
         <li class="li-header2">Home</li>
-        <li class="li-header3">Product</li>
-        <li class="li-header4">Login</li>
+        <li class="li-header3">Product</li>      
+        <li class="li-header4"><a href="loginpage.php">Login</a></li>
       </ul>
     </div>
 
@@ -104,13 +104,59 @@
     <div  class="container1 ">
       <div class="row gx-5">
         <div class="col">
-         <img id="picture"   src="set_coomputer.png" alt="">
+         <img id="picture"   src="set_computer.png" alt="">
         </div>
         <div class="col">
           <div id="text_middle" class="p-3  "> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
         </div>
       </div>
     </div>
+    
+   <!-- Footer Start -->
+   <footer class="footer bg-black px-20 py-4 text-white">
+        <div class="footer-container d-flex justify-content-between align-items-start">
+            <div class="footer-logo my-5">
+                <img src="logo new.png" alt="logo" class="w-40 bg-white rounded-full p-2">
+            </div>
+            <div class="footer-section d-flex flex-column gap-10 text-white">
+                <p class="text-xl">we are Techive,The  always there for you</p>
+                <div class="d-flex gap-2 align-items-center">
+                    <i class="bi bi-geo-alt-fill text-4xl"></i>
+                    <p class="text-sm">Jl.keputih makam blok E,no 7,keputih,ke.Sukolilo,Surabaya,jawa Timur 60111</p>
+                </div>
+            </div>
+            <div class="footer-links d-flex flex-column">
+                <p>Home</p>
+                <p>Product</p>
+                <p>Favorite</p>
+                <p>About</p>
+            </div>
+            <div class="footer-links d-flex flex-column">
+                <p>Community</p>
+                <p>News</p>
+                <p>Sales</p>
+                <p>API</p>
+            </div>
+            <div class="footer-links d-flex flex-column">
+                <p>Guides</p>
+                <p>Terms of use</p>
+                <p>Terms of sale</p>
+                <p>Privacy Policy</p>
+            </div>
+            <div class="footer-social d-flex flex-column">
+                <p class="text-2xl font-semibold">Connect with us</p>
+                <div class="d-flex gap-5 text-3xl my-2">
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-linkedin"></i>
+                    <i class="bi bi-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Footer End -->
+    
 
   </body>
 </html>
